@@ -1,3 +1,5 @@
+package philosopher;
+
 public class DiningPhilosophers {
 
     public static void main(String[] args) throws Exception {
@@ -24,7 +26,7 @@ public class DiningPhilosophers {
             else {
                 philosophers[i] = new Philosopher(leftFork, rightFork);
             }
-            Thread t = new Thread(philosophers[i], "Philosopher " + (i + 1));
+            Thread t = new Thread(philosophers[i], "philosopher.Philosopher " + (i + 1));
             t.start();
         }
     }

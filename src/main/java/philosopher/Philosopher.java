@@ -1,3 +1,5 @@
+package philosopher;
+
 public class Philosopher implements Runnable {
     private Object leftFork;
     private Object rightFork;
